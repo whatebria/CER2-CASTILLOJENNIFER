@@ -1,0 +1,14 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+{% load static %}
+
+<div id="cuerpo" class="container p-0">
+
+  {% include 'app/departamentos.html' %}
+
+  {% include 'app/comunicados.html' %}
+
+</div>
+
+{% endblock %}
