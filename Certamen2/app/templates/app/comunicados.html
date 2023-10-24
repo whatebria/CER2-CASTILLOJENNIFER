@@ -1,3 +1,4 @@
+{% load static %}
     {% if total_comunicados == 0 %}
     <div class="container-fluid p-5 cuerpo extra">
       <div class="alert alert-info text-center" role="alert">
@@ -37,6 +38,9 @@
           <div class="carousel-inner">
             {% for comunicado in comunicados %}
               {% if comunicado.visible == True %}
+
+            
+
               <div class="carousel-item {% if forloop.first %} active {% endif %}">
                   <div class="card text-center m-2">
                     <div class="card-body ">

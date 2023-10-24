@@ -23,3 +23,6 @@ urlpatterns = [
     path('', views.Comunicados, name="Comunicados"),
     path('filtrar/<str:departamento_selec>/', views.Comunicados, name='filtrar_por_departamento'),
 ]
+
+admin.site.site_header = 'Administracion'
+admin.site.index_title= 'Comunicados y entidades'

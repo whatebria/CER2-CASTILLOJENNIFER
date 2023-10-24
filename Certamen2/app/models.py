@@ -5,9 +5,8 @@ from django.contrib.auth.models import User
 
 class Entidad(models.Model):
     nombre = models.CharField(max_length=50)
-    logo = models.ImageField(upload_to='images/%Y/%m', verbose_name='Imagen')
+    logo = models.ImageField()
     
-
     def __str__(self):
         return self.nombre
     class Meta:
