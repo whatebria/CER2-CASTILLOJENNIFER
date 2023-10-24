@@ -1,0 +1,31 @@
+.tit{
+    background-color: #b1ccc4;
+}
+
+.text{
+    color: rgb(255, 255, 255);
+}
+
+.barra{
+    background-color: #4e5861;
+}
+.cuerpo{
+    background-color: #f5e3ae;
+}
+.card-body{
+    background-color: #4e5861;
+}
+#carrousel{
+    height: 500px;
+}
+.img{
+    padding-top: 5px;
+}
+.extra{
+    height: 350px;
+}
+#foot{
+    height: 70px;
+    background-color: #4e5861;
+    
+}

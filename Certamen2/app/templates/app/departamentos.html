@@ -1,0 +1,20 @@
+{% load static %}
+<div class="row d-xxl-none p-3 cuerpo">
+    <form method="GET" action="{% url 'Comunicados' %}">
+        <div class="col">
+            <select class="form-select" name="departamento" onchange="this.form.submit()">
+            <option value="all"
+            {% if departamento_selec == 'all' %} selected {% endif %}>Todos
+        </option>
+        {% for departamento in Departamentos %}
+            <option value="{{ departamento.nombre }}"
+                {% if departamento_selec == departamento.nombre %} 
+                selected 
+                {% endif %}> 
+                {{ departamento.nombre }}
+            </option>
+            {% endfor %}
+            </select>
+        </div>
+    </form>
+</div>
