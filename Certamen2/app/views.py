@@ -20,7 +20,6 @@ def Comunicados(request):
             'comunicados': comunicados.order_by('-fecha_publicacion'),
             'Departamentos':Entidad.objects.all(),
             'total_comunicados':comunicados.count(),
-            'total_departamentos':Entidad.objects.count(),
             'departamento_selec':departamento_selec
             }
 
